@@ -52,4 +52,4 @@ function lemonadeChange(bills:number[]):boolean {
 const example1=[5, 5, 5, 10, 20];
 console.log(lemonadeChange(example1));
 const example2=[5, 5, 10, 10, 20];
-console.log(lemonadeChange(example2)); 
+console.log(lemonadeChange(example2));
