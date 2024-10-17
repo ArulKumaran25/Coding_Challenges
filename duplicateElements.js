@@ -1,14 +1,21 @@
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
-function removeDuplicates(array) {
-    return __spreadArray([], new Set(array), true);
+// function findDuplicates(arr: number[]): number[] {
+//     const seen = new Set<number>();
+//     const duplicates = new Set<number>();
+//     for (const num of arr) {
+//         if (seen.has(num)) {
+//             duplicates.add(num);
+//         } else {
+//             seen.add(num);
+//         }
+//     }
+//     return Array.from(duplicates);
+// }
+// const exampleArray = [1, 2, 3, 4, 5, 1, 2, 6];
+// console.log("Duplicate elements:", findDuplicates(exampleArray));
+function removeDuplicates(arr) {
+    return Array.from(new Set(arr));
 }
-var array = [1, 2, 2, 3, 4, 4, 5];
-console.log(removeDuplicates(array));
+// Example usage:
+var exampleArray = [1, 2, 3, 4, 5, 1, 2, 6];
+var uniqueArray = removeDuplicates(exampleArray);
+console.log("Array with duplicates removed:", uniqueArray);
