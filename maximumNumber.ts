@@ -7,30 +7,16 @@
 // const tonumber=parseInt(get_input)
 // console.log(tonumber,typeof(tonumber))
 
-// const prompt=require('prompt-sync');
-// var userInput=prompt("Enter an Array");
-
-// function maximumNumber(arr) {
-//     return Math.max.apply(Math,arr);
-// }
-// var example1 = [1,2,3,4,5];
-// console.log(maximumNumber(userInput));
-
-
-
-
-const prompt = require('prompt-sync')(); // Make sure to call the function
-
-var userInput = prompt("Enter an array of numbers, separated by commas: ");
-
-// Convert the input string to an array of numbers
-var userArray = userInput.split(',').map(Number);
+let prompt=require('prompt-sync')();
+var userInput=prompt("Enter an Array");
 
 function maximumNumber(arr) {
-    return Math.max.apply(Math, arr);
+    return Math.max.apply(Math,arr);
 }
+var example1 = [1,2,3,4,5];
+console.log(maximumNumber(userInput));
 
-console.log(maximumNumber(userArray));
+
 
 
 
