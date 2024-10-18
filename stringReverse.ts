@@ -2,6 +2,7 @@
 
 import { log } from "console";
 
+
 function stringReverse(str:string):string{
     return str.split('').reverse().join('');
 }
