@@ -1,17 +1,17 @@
 let input=require('prompt-sync')();
 var s:string=input("Enter a string : ")
-var stringAr:string[] = s.split(' ');
-var index:number=0;
-var min:number=100;
+let stringAr:string[] = s.split(' ');
+let index:number=0;
+let min:number=100;
 for(var s of stringAr){
     if(s.length<min)
         min=s.length
 }
-var ans:string = "";
-var flag:number=0;
-for(var i:number=0;i<min;i++){
+let ans:string = "";
+let flag:number=0;
+for(let i:number=0;i<min;i++){
     flag = 0;
-    for(var j:number=0;j<stringAr.length-1;j++){
+    for(let j:number=0;j<stringAr.length-1;j++){
         if(stringAr[j][i]==stringAr[j+1][i]){
             flag=1;
         }
