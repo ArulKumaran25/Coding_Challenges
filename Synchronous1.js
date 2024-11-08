@@ -17,7 +17,6 @@ console.log("All cars have passed through the toll booth");
 
 // Toll Plaza Example for Synchronous 
 
-
 function insertCard() {
     console.log("Inserting card and verifying PIN...");
     for (let i = 0; i < 1e8; i++); // Simulating delay
