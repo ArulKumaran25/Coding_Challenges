@@ -18,7 +18,7 @@ function countNotDivisibleByN(start, end, n) {
 }
 // Example usage:
 var start = 5;
-var end = 12;
-var n = 5;
+var end = 10;
+var n = 2;
 var result = countNotDivisibleByN(start, end, n);
 console.log(result); // Output: 7
