@@ -1,25 +1,36 @@
 // Declare two variables x and y with numerical values. Swap their values without using a third variable
 
-import * as readline from 'readline'; //input from user
+import * as readline from 'readline'; // Import readline for user input
 
 const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-r.question('Enter a and  b to swap ', (values: string) => {
-    var a:number=Number(values.split(" ")[0]);
-    var b:number=Number(values.split(" ")[1]);
-    a=a+b;
-    b=a-b;
-    a=a-b;
-    console.log(a,b);
-   
+  input: process.stdin,
+  output: process.stdout,
 });
 
-function swapNumbers(a:number,b:number){ //using functions
-    var a=a+b;
-    var b=a-b;
-    var a=a-b;
-    console.log(a,b);
+// Read user input
+r.question('Enter two numbers (a and b) separated by space to swap: ', (values: string) => {
+  let a: number = Number(values.split(' ')[0]);
+  let b: number = Number(values.split(' ')[1]);
+
+  // Swap logic without a third variable
+  a = a + b;
+  b = a - b;
+  a = a - b;
+
+  console.log(`Swapped values: a = ${a}, b = ${b}`);
+
+  // Close the readline interface
+  r.close();
+});
+
+// Function to swap numbers
+function swapNumbers(a: number, b: number): void {
+  a = a + b;
+  b = a - b;
+  a = a - b;
+
+  console.log(`Swapped values using function: a = ${a}, b = ${b}`);
 }
-swapNumbers(5,3);
+
+// Example function call
+swapNumbers(5, 3); 
