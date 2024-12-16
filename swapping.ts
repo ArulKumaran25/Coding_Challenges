@@ -31,6 +31,5 @@ function swapNumbers(a: number, b: number): void {
 
   console.log(`Swapped values using function: a = ${a}, b = ${b}`);
 }
-
 // Example function call
 swapNumbers(5, 3); 

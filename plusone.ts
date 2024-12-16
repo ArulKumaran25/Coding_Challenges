@@ -9,5 +9,5 @@ function plusone(digits:number []):number[] {
     digits.unshift(1);
     return digits;
 }
-const examplee=[1,2,3];
-console.log(plusone(examplee));
+const example=[1,2,3];
+console.log(plusone(example));

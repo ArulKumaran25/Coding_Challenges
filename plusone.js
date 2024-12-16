@@ -9,5 +9,5 @@ function plusone(digits) {
     digits.unshift(1);
     return digits;
 }
-var examplee = [1, 2, 3];
-console.log(plusone(examplee));
+var example = [1, 2, 3];
+console.log(plusone(example));
