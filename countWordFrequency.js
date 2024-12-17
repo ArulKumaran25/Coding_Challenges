@@ -14,6 +14,6 @@ function countWordFrequency(inputString) {
     }
     return wordCount;
 }
-var inputString = "rata ta ta rata ra ta ta";
+var inputString = "this is a only this is one this one";
 var result = countWordFrequency(inputString);
 console.log(result);

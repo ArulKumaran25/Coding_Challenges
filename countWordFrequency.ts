@@ -14,7 +14,6 @@ function countWordFrequency(inputString:string):{[key:string]:number}
     }
     return wordCount;
 }
-const inputString="";
-
+const inputString="this is a only this is one this one";
 const result=countWordFrequency(inputString);
 console.log(result);
