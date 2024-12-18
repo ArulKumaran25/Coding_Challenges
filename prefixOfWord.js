@@ -15,8 +15,8 @@ function isPrefixOfWord(sentence, searchword) {
     return -1;
 }
 var sentence1 = 'I Love TypeScript';
-var searchword1 = 'Type';
-console.log(isPrefixOfWord(sentence1, searchword1));
+var searchWord1 = 'Type';
+console.log(isPrefixOfWord(sentence1, searchWord1));
 var sentence2 = 'Thankyou for your understanding';
 var searchWord2 = 'Thank';
 console.log(isPrefixOfWord(sentence2, searchWord2));
