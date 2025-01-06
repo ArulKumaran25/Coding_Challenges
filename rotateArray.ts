@@ -17,7 +17,7 @@
 function rotateArray(arr:number[],k:number):number[] {
     const n=arr.length;
     k=k%n;
-    if(k===0) 
+    if(k===0)
         return arr;
     const rotatedPart=arr.slice(-k);
     const remainingPart=arr.slice(0,n-k);
