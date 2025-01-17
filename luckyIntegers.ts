@@ -1,9 +1,6 @@
 // 1394. Find Lucky Integer in an Array
 // Hint
 // Given an array of integers arr, a lucky integer is an integer that has a frequency in the array equal to its value.
-
-import { log } from "console";
-
 // Return the largest lucky integer in the array. If there is no lucky integer return -1.
 
 // Example 1:
@@ -33,12 +30,10 @@ function findLucky(arr:number[]):number {
         frequencyMap[num]=(frequencyMap[num]||0)+1;
     }
     let largestLucky=-1;
-
-    // Iterate through the frequency map
     for (const[key, value] of Object.entries(frequencyMap)) {
-        const number=parseInt(key, 10);
+        const number=parseInt(key,10);
         if (number===value) {
-            largestLucky=Math.max(largestLucky, number);
+            largestLucky=Math.max(largestLucky,number);
         }
     }
 

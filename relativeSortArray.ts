@@ -39,7 +39,7 @@ function relativeSortArray(arr1:number[],arr2:number[]):number[] {
 
 const arr1=[1,2,3,4];
 const arr2=[5,6,7,4];
-console.log(relativeSortArray(arr1,arr2)); 
+console.log(relativeSortArray(arr1,arr2));
 
 const arr1_2=[28,6,22,8,44,17];
 const arr2_2=[22,28,8,6];
