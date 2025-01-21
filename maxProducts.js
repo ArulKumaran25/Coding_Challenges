@@ -11,6 +11,7 @@
 // nums = [-10, -3, 5, 6, -2]
 // Output:
 // 30
+// approach 1
 function maxProducts(nums) {
     nums.sort(function (a, b) { return a - b; });
     var n = nums.length;

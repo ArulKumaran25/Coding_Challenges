@@ -1,8 +1,6 @@
-"use strict";
 // 1394. Find Lucky Integer in an Array
 // Hint
 // Given an array of integers arr, a lucky integer is an integer that has a frequency in the array equal to its value.
-Object.defineProperty(exports, "__esModule", { value: true });
 // Return the largest lucky integer in the array. If there is no lucky integer return -1.
 // Example 1:
 // Input: arr = [2,2,3,4]
@@ -26,7 +24,6 @@ function findLucky(arr) {
         frequencyMap[num] = (frequencyMap[num] || 0) + 1;
     }
     var largestLucky = -1;
-    // Iterate through the frequency map
     for (var _a = 0, _b = Object.entries(frequencyMap); _a < _b.length; _a++) {
         var _c = _b[_a], key = _c[0], value = _c[1];
         var number = parseInt(key, 10);
