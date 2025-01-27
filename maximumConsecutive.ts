@@ -1,13 +1,13 @@
 function findMaxConsecutiveOnes(nums: number[]): number {
-    let maxCount = 0; // To store the maximum number of consecutive 1s
-    let currentCount = 0; // To track the current sequence of 1s
+    let maxCount=0; // To store the maximum number of consecutive 1s
+    let currentCount=0; // To track the current sequence of 1s
 
     for (const num of nums) {
         if (num === 1) {
             currentCount++; // Increment the count for consecutive 1s
             maxCount = Math.max(maxCount, currentCount); // Update maxCount if needed
         } else {
-            currentCount = 0; // Reset the count when a 0 is encountered
+            currentCount=0; // Reset the count when a 0 is encountered
         }
     }
 
